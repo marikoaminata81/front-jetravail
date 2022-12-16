@@ -21,7 +21,7 @@
     </ion-avatar>
   </ion-toolbar>
      -->
-     <ion-menu contentId="main-content" color="dark" no-border>
+     <!-- <ion-menu contentId="main-content"  no-border>
     
       <ion-toolbar >
         <ion-title ><img src="/assets/image/Logo.png" alt=""></ion-title>
@@ -36,20 +36,40 @@
     </ion-content>
     </ion-menu>
     
-    <div class="ion-page" id="main-content">
-    <ion-header>
+    <div class="ion-page" id="main-content"> -->
+    <!-- <ion-header>
       <ion-toolbar>
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
         <ion-title style="text-align: center;"><i>Bienvenue User</i></ion-title>
       </ion-toolbar>
-    </ion-header>
+    </ion-header> -->
 <!-- </ion-header> -->
 
-<ion-content [fullscreen]="true" color="light">
+<!-- <ion-content [fullscreen]="true" color="light">
 
-  <div class="main-header"></div>
+  <div class="main-header">
+    
+    
+    <ion-slides [options]="slideOpt1">
+      <ion-slide>
+        <img src="/assets/image/pexels.jpg" alt="">
+        
+      </ion-slide>
+          
+      <ion-slide>
+        <img src="/assets/image/fleuve.jpg" alt="">
+      </ion-slide>
+    </ion-slides>
+    
+    <ion-header>
+
+      
+  
+  </ion-header>
+  
+</div>
 
   <ion-grid>
     <ion-row>
@@ -57,7 +77,7 @@
         <ion-label>
           
           <p>
-            <ion-chip color="light">
+            <ion-chip color="light" >
               <ion-label class="ion-text-wrap">
                 Découvrez le Mali
               </ion-label>
@@ -65,21 +85,23 @@
           </p>
         </ion-label>
       </ion-col>
-      <!-- <ion-col size="6" class="ion-text-end">
+       <ion-col size="6" class="ion-text-end">
         <ion-button color="light" size="small">
           <ion-text color="primary">Bouton</ion-text>
           <ion-icon name="add" color="primary" slot="end"></ion-icon>
         </ion-button>
       </ion-col> -->
-    </ion-row>
+    <!-- </ion-row>
 
-    <ion-row style="padding: 50px;" class="ion-margin-horizontal ion-margin-top">
+    <ion-row style="padding: 350px;" class="ion-margin-horizontal ion-margin-top">
       <ion-col>
+        <ion-chip color="success">
         <ion-label color="light">
-          <b>Les Régions les plus vue</b>
+          <b class="ion-text-wrap">Les Régions les plus vue</b>
         </ion-label>
+      </ion-chip>
       </ion-col>
-    </ion-row>
+    </ion-row> -->
 
     <!-- <ion-row class="ion-margin-horizontal">
       <ion-col *ngFor="let item of features" size="6">
@@ -114,46 +136,126 @@
         <ion-text slot="end" [color]="item?.amount > 0 ? 'success' : 'danger'">₹{{item?.amount}}</ion-text>
       </ion-item>
     </ion-list> -->
-    <ion-slides [options]="slideOpt">
+    <!-- <ion-slides [options]="slideOpt">
       <ion-slide>
-        <ion-card>
-          <ion-card-header>
-            Card Header
-          </ion-card-header>
-          <ion-card-content>
-            <p>Content goes here</p>
-          </ion-card-content>
-        </ion-card>
-      </ion-slide>
-          <ion-card>
-            <ion-card-header>
-              Card Header
-            </ion-card-header>
-            <ion-card-content>
-              <p>Content goes here</p>
-            </ion-card-content>
-          </ion-card>
-      <ion-slide>
-        <ion-row>
-         
-          <ion-card>
-            <img style="width: 100px;"alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-            <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-             
-            </ion-card-header>
-          
-            <ion-card-content>
-              Here's a small text description for the card content. Nothing more, nothing less.
-            </ion-card-content>
-          </ion-card>
-
+          slide2
         
-        </ion-row>
+      </ion-slide>
+          
+      <ion-slide>
+      
+      slide1
       </ion-slide>
     </ion-slides>
   </ion-grid>
   
  
 
+</ion-content> --> 
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button>k</ion-menu-button>
+      </ion-buttons>
+      <ion-title style="text-align: end;"><i>Bienvenue User</i></ion-title>
+      
+      <div>
+        <nav>Accueil</nav>
+      </div>
+    </ion-toolbar>
+    
+<!-- </ion-header> -->
+</ion-header>
+
+
+<ion-content >
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/image/pexels.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Ionic Framework</ion-card-subtitle>
+      <ion-card-title>Navigation in Depth</ion-card-title>
+    </ion-card-header>
+    <!-- <ion-card-content>
+      <p>Use this Ionic 5 Starter App to explore different navigation possibilities available with <b>Ionic Angular Router</b> as well as to learn some usability tricks you can add to your Ionic apps to make them even better.</p>
+    </ion-card-content> -->
+  </ion-card>
+<div padding>
+<br>
+<br>
+<br>
+<ion-card>
+  <ion-card-content>
+    srtfgyuhjikoplm*ùjkldtfgyuhjiklmtyghjklgvbhjn,gvbhjn,
+  </ion-card-content>
+</ion-card>
+<br>
+<br>
+<br>
+<ion-slides [options]="slideOpt">
+  <ion-slide>
+    
+<ion-row>
+  <ion-col>
+        <div class="box red">
+         <h2>Angular</h2>
+         <p>Front-end development framework</p>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="box red">
+       <h2>Angular</h2>
+       <p>Front-end development framework</p>
+    </div>
+  </ion-col>
+      <ion-col>
+      <div class="box green">
+         <h2>Ionic Native</h2>
+         <p>Apache Cordova compatible plugins</p>
+      </div>
+    </ion-col>
+      <ion-col>
+      <div class="box blue">
+         <h2>TypeScript</h2>
+         <p>Superset of JavaScript bokloplllll</p>
+      </div>
+     </ion-col>
+    </ion-row>
+    
+      </ion-slide>
+      <ion-slide>
+    
+        <ion-row>
+          <ion-col>
+                <div class="box red">
+                 <h2>Angular</h2>
+                 <p>Front-end development framework</p>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div class="box red">
+               <h2>Angular</h2>
+               <p>Front-end development framework</p>
+            </div>
+          </ion-col>
+              <ion-col>
+              <div class="box green">
+                 <h2>Ionic Native</h2>
+                 <p>Apache Cordova compatible plugins</p>
+              </div>
+            </ion-col>
+              <ion-col>
+              <div class="box blue">
+                 <h2>TypeScript</h2>
+                 <p>Superset of JavaScript bokloplllll</p>
+              </div>
+             </ion-col>
+            </ion-row>
+            
+              </ion-slide>
+          
+        </ion-slides>
+
+      <footer>Footer</footer>
+ <!-- </div> -->
+</div>
 </ion-content>

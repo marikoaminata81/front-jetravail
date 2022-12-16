@@ -26,6 +26,14 @@ export class HomePage {
       el: '.swiper-pagination',
     }
   }
+  slideOpt1 ={
+    initialSlide: 0,
+ slidesPerView: 3,
+ autoplay:false,
+    pagination: {
+      el: '.swiper-pagination',
+    }
+  }
   constructor() {}
 
 }
