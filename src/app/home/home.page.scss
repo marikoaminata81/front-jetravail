@@ -15,6 +15,16 @@ ion-menu {
       --background: transparent;
   }
 
+  .card {
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            box-shadow: 5px 6px 6px 2px #e9ecef;
+            transform: scale(1.1);
+        }
+}
   ion-list {
       background: transparent;
   }
@@ -25,7 +35,7 @@ ion-menu {
   ion-content {
       --background: transparent;
   }
-}
+
 ion-content {
   * {
     font-family: lato;
@@ -40,6 +50,7 @@ ion-content {
     // border-radius: 0 0 50% 50%;
     margin-left: -14vh;
     margin-top: -10px;
+   
   }
   ion-grid {
     width: 100%;
@@ -216,7 +227,7 @@ footer {
   
 // }
 .welcome-card ion-img {
-  max-height: 35vh;
+  max-height: 45vh;
   overflow: hidden;
 }
   h2 {
@@ -235,7 +246,25 @@ footer {
    background-color: rgba(220, 83, 81, 1);
    box-shadow: inset;
 }
+.red1{
+  background-color:rgba(0, 0, 0, 0.45);
+  box-shadow: inset;
+  height: 79vh;
+  width: 155%;
+  
 
+  // border-radius: 0 0 50% 50%;
+  margin-left: -14vh;
+  margin-top: -16px;
+}
+.welcome-card1{
+  height: 65.5vh;
+  width: 155%;
+  background-color:rgba(0, 0, 0, 0.45);
+}
+hr.new1 {
+  border-top: 1px solid rgb(255, 255, 255);
+}
 .green {
    background-color: rgba(187, 225, 123, 1);
 }
@@ -262,4 +291,51 @@ footer {
 
 .turquoise {
    background-color: rgba(105, 203, 217, 1);
+   
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 200px;
+  margin-bottom: 2%;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #42B90B;
+  color: white;
+  transform: rotateY(180deg);
 }

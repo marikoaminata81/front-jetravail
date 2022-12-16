@@ -22,6 +22,7 @@ export class HomePage {
     initialSlide: 0,
  slidesPerView: 1,
  autoplay:true,
+ speed: 400,
     pagination: {
       el: '.swiper-pagination',
     }
@@ -30,6 +31,15 @@ export class HomePage {
     initialSlide: 0,
  slidesPerView: 3,
  autoplay:false,
+    pagination: {
+      el: '.swiper-pagination',
+    }
+  }
+  slideOpt2 ={
+    initialSlide: 0,
+ slidesPerView: 1,
+ autoplay:true,
+ speed: 400,
     pagination: {
       el: '.swiper-pagination',
     }
