@@ -9,10 +9,11 @@ ion-header {
 }
 //Changement de couleur du side menu
 ion-menu {
-  --ion-background-color:rgba(0, 0, 0, 0.75); ;
+  --ion-background-color:rgba(0, 0, 0, 0.75); 
 
   ion-toolbar {
       --background: transparent;
+      
   }
 
   .card {
@@ -198,19 +199,7 @@ $grid-max-widths: (
 
 
 // Define the header/footer tag values
-header,
-footer {
-  padding: 3em;
-  margin-left: 5px;
-  margin-right: 5px;
-  // Add a flex rule for browsers not supporting the
-  // CSS Grid Layout spec
-  flex: 0 1 100%;
-  // Define the start and end values for the grid column
-  grid-column: 1 / -1;
-  text-align: center;
-  background-color: rgba(175, 186, 202, 1);
-}
+
 
 
 // Define the style rules for each panel within the grid
@@ -265,34 +254,20 @@ footer {
 hr.new1 {
   border-top: 1px solid rgb(255, 255, 255);
 }
-.green {
-   background-color: rgba(187, 225, 123, 1);
+
+
+footer {
+  border-radius: 15px;
+  /* padding: 3em; */
+  margin-left: 15px;
+  margin-right: 15px;
+  flex: 0 1 100%;
+  grid-column: 1/-1;
+  text-align: center;
+  background-color: #42B90B;
 }
 
-.blue {
-   background-color: rgba(131, 150, 225, 1);
-}
 
-.purple {
-   background-color: rgba(155, 121, 170, 1);
-}
-
-.yellow {
-   background-color: rgba(235, 229, 39, 1);
-}
-
-.violet {
-   background-color: rgba(213, 118, 211, 1);
-}
-
-.orange {
-   background-color: rgba(213, 151, 46, 1);
-}
-
-.turquoise {
-   background-color: rgba(105, 203, 217, 1);
-   
-}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
@@ -338,4 +313,45 @@ hr.new1 {
   background-color: #42B90B;
   color: white;
   transform: rotateY(180deg);
+}
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+.sp1{
+  color: #42B90B;
+}
+.sp2{
+  color: yellow;
+}
+.sp3{
+  color: red;
 }

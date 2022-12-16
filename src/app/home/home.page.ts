@@ -44,6 +44,7 @@ export class HomePage {
       el: '.swiper-pagination',
     }
   }
+  
   constructor() {}
 
 }
