@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
   {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
@@ -19,7 +19,8 @@ const routes: Routes = [
   {
     path: 'inscription',
     loadChildren: () => import('./inscription/inscription.module').then( m => m.InscriptionPageModule)
-  },  {
+  },
+  {
     path: 'user-profile',
     loadChildren: () => import('./user-profile/user-profile.module').then( m => m.UserProfilePageModule)
   },
@@ -39,6 +40,11 @@ const routes: Routes = [
     path: 'liste-region',
     loadChildren: () => import('./liste-region/liste-region.module').then( m => m.ListeRegionPageModule)
   },
+  {
+    path: 'details-region',
+    loadChildren: () => import('./details-region/details-region.module').then( m => m.DetailsRegionPageModule)
+  },
+ 
 
 
 ];
