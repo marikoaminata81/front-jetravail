@@ -23,6 +23,22 @@ const routes: Routes = [
     path: 'user-profile',
     loadChildren: () => import('./user-profile/user-profile.module').then( m => m.UserProfilePageModule)
   },
+  {
+    path: 'ajout-region',
+    loadChildren: () => import('./ajout-region/ajout-region.module').then( m => m.AjoutRegionPageModule)
+  },
+  {
+    path: 'ajout-user',
+    loadChildren: () => import('./ajout-user/ajout-user.module').then( m => m.AjoutUserPageModule)
+  },
+  {
+    path: 'liste-user',
+    loadChildren: () => import('./liste-user/liste-user.module').then( m => m.ListeUserPageModule)
+  },
+  {
+    path: 'liste-region',
+    loadChildren: () => import('./liste-region/liste-region.module').then( m => m.ListeRegionPageModule)
+  },
 
 
 ];

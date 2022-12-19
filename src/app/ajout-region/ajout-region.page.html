@@ -1,0 +1,197 @@
+<ion-header></ion-header>
+<ion-menu contentId="main-content" color="dark" no-border>
+    
+  <ion-toolbar >
+    <ion-title ><img src="/assets/image/Logo.png" alt=""></ion-title>
+  </ion-toolbar>
+  <!-- Wrapper -->
+
+ 
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <ul class="list-unstyled menu-elements">
+      <hr class="trait1">
+        <li class="active">
+          <ion-avatar > <img src="/assets/image/Logo.png" alt=""></ion-avatar>
+        </li>
+      <hr class="trait1">
+        <li class="active">
+            <a class="scroll-link" href=""><i class="fas fa-home" style="width: 18px; height: 18px;"></i>Acceuil</a>
+        </li>
+        <hr class="trait1">
+        <li>
+            <a class="scroll-link" href="#section-1"><i class="fas fa-map" style="width: 18px; height: 18px;"></i> Les Régions</a>
+        </li>
+        <hr class="trait1">
+        <li>
+            <a class="scroll-link" href="#section-2"><i class="fas fa-users" style="width: 18px; height: 18px;"></i> Les Utilsateurs</a>
+        </li>
+        <!-- <hr class="trait">
+        <li>
+            <a class="scroll-link" href="#section-5"><i class="fas fa-pencil-alt"></i> Portfolio</a>
+        </li>
+       <hr class="trait">
+        <li>
+            <a class="scroll-link" href="#section-6"><i class="fas fa-envelope"></i> Contact us</a>
+        </li>
+        
+        <li>
+           
+        </li> -->
+    </ul>
+
+    <div class="to-top">
+        <a class="btn btn-primary btn-customized-3" href="#" role="button" style="text-align: center;">
+          Deconnexion
+        </a>
+    </div>
+
+
+
+</nav>
+<!-- End sidebar -->
+
+<!-- Dark overlay -->
+
+
+<!-- Content -->
+
+<!-- End content -->
+
+
+<!-- End wrapper -->
+
+<ion-content class="ion-padding;">
+
+</ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;"><em>Bienvenue User sur l'inteface de <span class="sp1">Mali</span><span class="sp2">Tou</span><span class="sp3">rist</span></em></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <div class="container">
+    <div class="row boxShadow">
+      <!------------- Colonne Gauche---->
+      <div class="col-12 col-md-4 imgGauche">
+        <img src="/assets/image/Logo.png" alt="">
+        <!-- <h2 class="display-6 text-center" style="font-weight: bold;">Bienvenue</h2>
+        <h6>Sur <span style="color:#FF6600">Orange </span>Digital Center</h6> -->
+      </div>
+  
+      <!------------- Colonne Droite ---->
+      <div class="col-12 col-md-8">
+        <form>
+          <fieldset>
+            <legend class="display-6 text-center my-3"><b>Ajouter une region</b></legend>
+          </fieldset>
+          <div class="trait"></div>
+          <div class="row col-12">
+            <div class="mb-3 col-12 col-md-6 form-row form-floating">
+              <input type="text" name="code_region" id="code_region" placeholder="Code Region" class='input-line full-width'>
+              
+              
+            </div>
+            <div class="mb-3 col-12 col-md-6 form-row form-floating">
+              <input type="text" name="nom" id="nom" placeholder="Nom" class="input-line full-width">
+              
+            </div>
+            <div class="mb-3 col-12 col-md-6 form-row form-floating">
+              <input type="text" name="activite" id="activite" placeholder="Activite" class="input-line full-width">
+              
+            </div>
+            <div class="mb-3 col-12 col-md-6 form-row form-floating">
+              <input type="text" name="superficie" id="superficie" placeholder="Superficie" class="input-line full-width">
+             
+            </div>
+            <div class="mb-3 col-12 col-md-6 form-row form-floating">
+              <input type="text" name="pays" id="pays" placeholder="Pays" class="input-line full-width">
+            </div>
+            <!-- <div class="mb-3 col-12 col-md-6 form-row form-floating">
+              <select name="liste" id="liste" class="input-line full-width" >
+                  <option selected > --- à la liste ... ---</option>
+                  <option> Liste1</option>
+                  <option> Liste2</option>
+                 
+              </select>
+            </div> -->
+          </div>
+          <br><br>
+          <div>
+            <button class='ghost-round ull-width'>Enregistrer</button>
+          </div>
+          
+        
+        </form>
+  
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Tiec -->
+  <!-- <div class="container">
+    <div class="left" style="position: absolute; left: 0;">
+      <img src="assets/images/logo.png" alt="">
+      <h2>Bienvenue</h2>
+      <h6>Sur Orange Digital Center</h6>
+    </div>
+
+    <div class="right">
+
+      <h2>Ajouter un postulant</h2>
+      <div class="trait"></div>
+     
+      <form action="" method="post" >
+        <table>
+          <tr>
+            <td><input type="text" name="nom" placeholder="Saisir Nom" required></td>
+            <td><input type="text" name="nom" placeholder="Saisir Prenom" required></td>
+          </tr>
+          
+          <tr>
+            <td><input type="text" name="num" placeholder="Saisir Numero" required></td>
+            <td><select class="slt">
+              <option value="" style="background: red;">--Genre--</option>
+              <option value="">Masculin</option>
+              <option value="">Féminin</option>
+            </select></td> 
+          </tr>
+        </table>
+            <td><input class="eml" type="email" name="email" placeholder="Entrer Email" required></td>
+        <input type="submit" value="Envoyer">
+      </form>
+
+    </div>
+
+  </div>  -->
+
+
+</ion-content>
