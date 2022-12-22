@@ -43,14 +43,8 @@ const routes: Routes = [
   {
     path: 'details-region',
     loadChildren: () => import('./details-region/details-region.module').then( m => m.DetailsRegionPageModule)
-  },  {
-    path: 'region-acceuil',
-    loadChildren: () => import('./region-acceuil/region-acceuil.module').then( m => m.RegionAcceuilPageModule)
   },
-  {
-    path: 'user-acceuil',
-    loadChildren: () => import('./user-acceuil/user-acceuil.module').then( m => m.UserAcceuilPageModule)
-  },
+  
 
  
 

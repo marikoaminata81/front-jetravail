@@ -1,39 +1,33 @@
-<!-- <ion-header> -->
-  <!-- <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar> -->
-<!-- </ion-header> -->
-<!-- 
+
 <ion-content>
-  <ion-card>
-    <ion-card-header>
-      Header
-    </ion-card-header>
-    <ion-card-content>
-      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
-    </ion-card-content>
-  </ion-card>
-</ion-content> -->
-<ion-content>
+  
   <div class='bold-line'></div>
+  
   <div class='container'>
+
     <div class='window' style="width: 50%; background: rgba(0, 0, 0, 0.75);">
       <div class='overlay'></div>
       <div class='content'>
         <div class='welcome'><img class="img" src="/assets/image/Logo.png" alt="">
         </div>
         <div class='subtitle'></div>
+        <form name="form"
+        #f="ngForm"
+        (ngSubmit)="f.form.valid && onSubmit()">
         <div class='input-fields'>
-          <input type='text' placeholder="Veuillez Saisir votre Nom d'utilisateur" class='input-line full-width'>
+          <input type='text' placeholder="Veuillez Saisir votre Nom d'utilisateur" class='input-line full-width' name="username" id="username"  [(ngModel)]="form.username" #username="ngModel">
           <!-- <input type='email' placeholder='Email' class='input-line full-width'>  -->
-          <input type='password' placeholder='Veuillez Saisir votre Mot de Passe' class='input-line full-width'>
+          <input type='password' placeholder='Veuillez Saisir votre Mot de Passe' class='input-line full-width' name="password" [(ngModel)]="form.password" #password="ngModel" id="password">
         </div>
+      
         <!-- <div class='spacing'></div> -->
         <br><br>
-        <div><button class='ghost-round full-width'>Connexion</button></div>
+        <div><button class='ghost-round full-width' (click)="onSubmit()">Connexion</button></div>
+      </form>
         <p style="text-align: center;">Vous n’avez pas de compte ?</p>
         <div><button class='ghost-round full-width'>Inscrivez-vous ici</button></div>
       </div>
     </div>
   </div>
+
   </ion-content>
